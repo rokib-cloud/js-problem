@@ -39,4 +39,24 @@ function isLGSeven(num) {
 
 }
 
-console.log(isLGSeven(13));
+// console.log(isLGSeven(13));
+
+
+function findingBadData(age) {
+    let negativeCount = 0;
+    if (!Array.isArray(age)) {
+        return ("Error: input is not an array.");
+
+    }
+    for (let i = 0; i < age.length; i++) {
+        if (age[i] < 0) {
+            negativeCount++;
+        }
+    }
+    return negativeCount;
+
+}
+
+// const friendsAge = [12, -42, 23, -25, -22];
+// const friendsAge = 'my name is khan';
+// console.log(findingBadData(friendsAge));
