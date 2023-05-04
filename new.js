@@ -22,4 +22,21 @@ function evenOdd(str) {
         return 'odd';
     }
 }
-console.log(evenOdd('phero'));
+// console.log(evenOdd('phero'));
+
+
+function isLGSeven(num) {
+    let result = num - 7;
+    if (typeof num !== 'number') {
+        return 'Error: Input must be a number.';
+    }
+    if (result < 7) {
+        return result;
+    }
+    else {
+        return result * 2;
+    }
+
+}
+
+console.log(isLGSeven(13));
