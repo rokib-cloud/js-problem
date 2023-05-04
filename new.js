@@ -8,6 +8,8 @@ function mindGame(input) {
     }
 }
 // console.log(mindGame(12));
+// console.log(mindGame('akash onk megla'));
+
 
 function evenOdd(str) {
     if (typeof str !== 'string') {
@@ -23,6 +25,8 @@ function evenOdd(str) {
     }
 }
 // console.log(evenOdd('phero'));
+// console.log(evenOdd(25));
+
 
 
 function isLGSeven(num) {
@@ -40,6 +44,7 @@ function isLGSeven(num) {
 }
 
 // console.log(isLGSeven(13));
+// console.log(isLGSeven('ajke amr mon valo nei'));
 
 
 function findingBadData(age) {
@@ -60,3 +65,22 @@ function findingBadData(age) {
 // const friendsAge = [12, -42, 23, -25, -22];
 // const friendsAge = 'my name is khan';
 // console.log(findingBadData(friendsAge));
+
+
+function gemToDiamond(firstFriendGem, secondFriendGem, thirdFriendGem) {
+    if (typeof firstFriendGem !== 'number' || typeof secondFriendGem !== 'number' || typeof thirdFriendGem !== 'number') {
+        return ('Error: All parameters must be numbers');
+    }
+    const diamond = (firstFriendGem * 21) + (secondFriendGem * 32) + (thirdFriendGem * 43);
+    if (diamond >= 2000) {
+        return diamond - 2000;
+    }
+    else {
+        return diamond;
+    }
+
+}
+// console.log(gemToDiamond(10, 20, 30));
+// console.log(gemToDiamond([10, 20, 30]));
+// console.log(gemToDiamond('hello how are you?'));
+// console.log(10 * 21 + 20 * 32 + 43 * 30);
